@@ -35,7 +35,7 @@ module.exports.deliverOrder = orderId => {
 };
 
 module.exports.getOrder = orderId => {
-    console.log('Obtener una orden fue llamado');
+    console.log('Revisar pedido fue llamado');
 
     const params = {
         TableName: process.env.ORDERED_PIZZAS_TABLE,

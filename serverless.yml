@@ -81,4 +81,3 @@ resources:
         TableName: ${self:provider.environment.ORDERED_PIZZAS_TABLE}
         StreamSpecification:
           StreamViewType: NEW_IMAGE
-            

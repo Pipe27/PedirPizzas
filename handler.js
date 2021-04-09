@@ -3,9 +3,8 @@
 const { v4: uuidv4 } = require('uuid');
 const AWS = require('aws-sdk');
 const orderedPizzasMetadataManager = require('./orderedPizzasMetadataManager');
-
-var sqs = new AWS.SQS({ region: process.env.REGION });
 const QUEUE_URL = process.env.PENDING_ORDER_QUEUE;
+var sqs = new AWS.SQS({ region: process.env.REGION });
 
 module.exports.hacerPedido = (event, context, callback) => {
     const body = JSON.parse(event.body);
